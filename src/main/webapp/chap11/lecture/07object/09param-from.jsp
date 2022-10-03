@@ -8,12 +8,19 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>상품</h1>
-	<form action="cart.jsp" method="post">
-		상품명 : <input type="text" name="product" value="노트북">
-		<input type="submit" value="장바구니에 추가">
+	<form action="09param-to.jsp" method="post">
+		이름 <input type="text" name="name" value="홍길동"> <br>
+		주소 <input type="text" name="address" value="서울"> <br>
+		<input type="submit" value="전송">
 	</form>
-	
 </body>
 </html>
+
+
+
+
+
+
+
+
 

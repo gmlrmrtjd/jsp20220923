@@ -8,12 +8,30 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>상품</h1>
-	<form action="cart.jsp" method="post">
-		상품명 : <input type="text" name="product" value="노트북">
-		<input type="submit" value="장바구니에 추가">
-	</form>
+	<%
+	java.util.List<String> list = java.util.List.of("java", "css", "spring");
+	request.setAttribute("attr1", list);
+	%>
 	
+	<p>${attr1[0] }</p>
+	<p>${attr1[1] }</p>
+	<p>${attr1[2] }</p>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

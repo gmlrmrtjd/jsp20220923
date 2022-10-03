@@ -34,7 +34,7 @@
 	<!-- <form action="sub1/37action.jsp"> -->
 	<!-- <form action="../38action.jsp"> -->
 	<!-- <form action="../../39action.jsp"> -->
-	<form action="../book/40action.jsp">
+	<form action="../lecture/36action.jsp">
 		<input type="text" name="name"> <br>
 		<input type="text" name="address"> <br>
 		

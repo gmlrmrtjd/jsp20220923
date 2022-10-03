@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="java.util.*" %>
 <% request.setCharacterEncoding("utf-8"); %>
 <!DOCTYPE html>
 <html>
@@ -8,12 +9,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>상품</h1>
-	<form action="cart.jsp" method="post">
-		상품명 : <input type="text" name="product" value="노트북">
-		<input type="submit" value="장바구니에 추가">
-	</form>
+	<%
+	pageContext.setAttribute("hero list", List.of("iron", "cap"));
+	%>
+	
+	<p>${pageScope["hero list"][0] }</p> <%-- iron --%>
+	<p>${pageScope["hero list"][1] }</p> <%-- cap --%>
+	
 	
 </body>
 </html>
+
+
+
 

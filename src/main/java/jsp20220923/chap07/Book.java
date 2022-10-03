@@ -5,7 +5,11 @@ public class Book {
 	private String title;
 	private Integer price;
 
-	
+	public Book(String title, Integer price) {
+		super();
+		this.title = title;
+		this.price = price;
+	}
 	public String getTitle() {
 		return title;
 	}
@@ -17,12 +21,7 @@ public class Book {
 	}
 	public void setPrice(Integer price) {
 		this.price = price;
-	}
 
-	public Book(String title, Integer price) {
-		super();
-		this.title = title;
-		this.price = price;
 	}
 	
 

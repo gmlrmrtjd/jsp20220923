@@ -22,7 +22,7 @@
 </style>
 </head>
 <body>
-
+	<!-- .container>.main>h1{other2콘텐츠}+p*5>lorem^^.ad -->
 	<div class="container">
 		<div class="main">
 			<h1>other2콘텐츠</h1>

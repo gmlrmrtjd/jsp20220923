@@ -8,12 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>상품</h1>
-	<form action="cart.jsp" method="post">
-		상품명 : <input type="text" name="product" value="노트북">
-		<input type="submit" value="장바구니에 추가">
-	</form>
-	
+	<h1>el param</h1>
+	<p>request parameter들을 Map으로 저장한 객체</p>
+	<p><%= request.getParameter("address") %></p>
+	<p>${param.address }</p>
+	<p>${param["address"] }</p>
 </body>
 </html>
+
+
+
 

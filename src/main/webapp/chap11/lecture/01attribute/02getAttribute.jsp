@@ -8,12 +8,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>상품</h1>
-	<form action="cart.jsp" method="post">
-		상품명 : <input type="text" name="product" value="노트북">
-		<input type="submit" value="장바구니에 추가">
-	</form>
-	
+	<%--
+	여기에 attribute를 추가하는 코드를 작성
+	 --%>
+	 <% request.setAttribute("myattr2", "java"); %>
+	 
+	 
+	 
+	 <p>${myattr2 }</p> <%--java 라고 출력되도록  --%>
 </body>
 </html>
-

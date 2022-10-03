@@ -8,12 +8,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>상품</h1>
-	<form action="cart.jsp" method="post">
-		상품명 : <input type="text" name="product" value="노트북">
-		<input type="submit" value="장바구니에 추가">
-	</form>
+	<h3>el 기본 객체 (책 254쪽 표 참고)</h3>
 	
 </body>
 </html>
+
+
+
+
+
+
+
 
