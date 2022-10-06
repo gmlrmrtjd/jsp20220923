@@ -7,15 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>내 첫번째 jsp 파일! sebaek</h1>
+	<h1> SSungGGyu 첫번째 jsp 파일!</h1>
 	
-	<!-- 주석 : ctrl + shift + / -->
-	<!-- ul.note#list1>li*5>lorem2 --> 
-	<ul class="note" id="list1">
-		<li>Similique aperiam?</li>
-		<li>Quia non.</li>
-	</ul>
+	<!-- ui.note$list1>li*5>lorem2 -->
 	
-	
+	<ui class="note1list1">
+		<li>Lorem ipsum.</li>
+		<li>Ea nihil.</li>
+		<li>Ratione placeat.</li>
+		<li>Incidunt cumque.</li>
+		<li>Commodi illum.</li>
+	</ui>
 </body>
 </html>
