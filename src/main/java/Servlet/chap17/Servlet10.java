@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Servlet02
+ * Servlet implementation class Servlet10
  */
-@WebServlet("/Servlet02")
-public class Servlet02 extends HttpServlet {
+@WebServlet("/Servlet10")
+public class Servlet10 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Servlet02() {
+    public Servlet10() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,15 +26,21 @@ public class Servlet02 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("두번째 서블릿이 일함!!!!!!!!!");
+		// view06.jsp 로 포워드
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		// jsp 의 form에서 전송 버튼을 클릭하면
+		// post 방식 요청이 와서
+		// 이 메소드가 실행될 수 있도록 코드 작성
 	}
 
 }
+
+
+
+
+

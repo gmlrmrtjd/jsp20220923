@@ -8,16 +8,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Servlet02
+ * Servlet implementation class Servlet06
  */
-@WebServlet("/Servlet02")
-public class Servlet02 extends HttpServlet {
+// @WebServlet("/Servlet06")
+public class Servlet06 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Servlet02() {
+    public Servlet06() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,8 @@ public class Servlet02 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("두번째 서블릿이 일함!!!!!!!!!");
+		System.out.println("여섯번째 서블릿 일함!!!!!!");
+	
 	}
 
 	/**

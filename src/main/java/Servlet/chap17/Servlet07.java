@@ -1,23 +1,23 @@
 package Servlet.chap17;
 
 import java.io.IOException;
+
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Servlet02
+ * Servlet implementation class Servlet07
  */
-@WebServlet("/Servlet02")
-public class Servlet02 extends HttpServlet {
+//@WebServlet("/Servlet07")
+public class Servlet07 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Servlet02() {
+    public Servlet07() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -26,7 +26,14 @@ public class Servlet02 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("두번째 서블릿이 일함!!!!!!!!!");
+		System.out.println("일곱번째 서블릿 일함@@@@@@@@@");
+		String ip = getInitParameter("ip");
+		String password = getInitParameter("pw");
+		String userName = getInitParameter("userName");
+		
+		System.out.println("ip 파라미터 : " + ip);
+		System.out.println("pw 파라미터 : " + password);
+		System.out.println("userName 파라미터 : " + userName);
 	}
 
 	/**
