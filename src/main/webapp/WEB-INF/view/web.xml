@@ -10,30 +10,6 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
-  <!--  ServletContextListener 설정 -->
-  <listener>
-  	<listener-class>listener.chap20.ServletContextListener01</listener-class>
-  </listener>
-  
-    <listener>
-  	<listener-class>listener.chap20.ServletContextListener02</listener-class>
-  </listener>
-  
-      <listener>
-  	<listener-class>listener.chap20.ServletContextListener03</listener-class>
-  </listener>
-  
-  <!-- 초기화 파라미터 설정 : 어플리케이션 실행시 필요한 정보 작성 -->
-  <context-param>
-  	<param-name>init-param1</param-name>
-  	<param-value>init-value1</param-value>
-  </context-param>
-  
-  <context-param>
-  	<param-name>init-param2</param-name>
-  	<param-value>init-value2</param-value>
-  </context-param>
-  <!-- 세션 설정 -->
   <session-config>
   	<session-timeout>60</session-timeout>
   </session-config>
@@ -49,14 +25,38 @@
   	<filter-class>filter.chap19.Filter03</filter-class>
   </filter>
   
-  <filter-mapping>
-  	<filter-name>filter02</filter-name>
-  	<url-pattern>/Servlet10</url-pattern>
-  </filter-mapping>
+  <filter>
+  	<filter-name>filter04</filter-name>
+  	<filter-class>filter.chap19.Filter04</filter-class>
+  </filter>
+  
+  <filter>
+  	<filter-name>filter05</filter-name>
+  	<filter-class>filter.chap19.Filter05</filter-class>
+  </filter>
   
   <filter-mapping>
   	<filter-name>filter03</filter-name>
   	<url-pattern>/Servlet10</url-pattern>
+  	<url-pattern>/Servlet11</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>filter02</filter-name>
+  	<url-pattern>/Servlet10</url-pattern>
+	<url-pattern>/filter/*</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>filter04</filter-name>
+  	<url-pattern>/Servlet10</url-pattern>
+  </filter-mapping>
+  
+  <filter-mapping>
+  	<filter-name>filter05</filter-name>
+  	<url-pattern>/Servlet10</url-pattern>
+  	<url-pattern>/Servlet11</url-pattern>
+  	<!-- <url-pattern>/*</url-pattern> -->
   </filter-mapping>
   
   <!-- 서블릿 설정 -->
