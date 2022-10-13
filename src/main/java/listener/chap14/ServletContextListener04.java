@@ -60,7 +60,6 @@ public class ServletContextListener04 implements ServletContextListener {
     		System.out.println("리스너에서 문제 생김");
     	}
     	
-    	
     }
 	
 }

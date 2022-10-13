@@ -35,7 +35,7 @@ FROM Customers
 WHERE ContacName
 LIKE 'A%O';
 
--- firstName이 A로 시작하는 직원들(Emp,oyees)
+-- firstName이 A로 시작하는 직원들(Employees)
 SELECT * 
 FROM Employees 
 WHERE firstName
