@@ -14,11 +14,12 @@
 <body>
 	<h1>신규 고객 등록</h1>
 	
-	<form action="" method="post">
-		CustomerName : <input type="text" name="CName"> <br>
-		Address : <input type="text" name="Address"> <br>
-		City : <input type="text" name="City"> <br>
-		Country : <input type="text" name="Country"> <br>
+	<form action="${pageContext.request.contextPath }/Servlet28" method="post">
+		이름 : <input type="text" name="CName"> <br>
+		담당 : <input type="text" name="ContactName"> <br>
+		주소 : <input type="text" name="Address"> <br>
+		도시 : <input type="text" name="City"> <br>
+		국가 : <input type="text" name="Country"> <br>
 		<input type="submit" value="등록">
 	</form>
 

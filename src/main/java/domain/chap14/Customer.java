@@ -1,42 +1,60 @@
 package domain.chap14;
 
 public class Customer {
+	private int id;
 	private String name;
 	private String address;
-	private Integer Id;
-	private String country;
 	private String city;
-	
-	
-	
-	public String getCountry() {
-		return country;
+	private String country;
+	private String contactName;
+
+	public String getContactName() {
+		return contactName;
 	}
-	public void setCountry(String country) {
-		this.country = country;
+
+	public void setContactName(String contactName) {
+		this.contactName = contactName;
 	}
+
 	public String getCity() {
 		return city;
 	}
+
+	public String getCountry() {
+		return country;
+	}
+
 	public void setCity(String city) {
 		this.city = city;
 	}
-	public Integer getId() {
-		return Id;
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
-	public void setId(Integer id) {
-		Id = id;
+
+	public int getId() {
+		return id;
 	}
-	public String getName() {
-		return name;
+
+	public void setId(int id) {
+		this.id = id;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
+
 	public String getAddress() {
 		return address;
 	}
+
+	public String getName() {
+		return name;
+	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }
+
