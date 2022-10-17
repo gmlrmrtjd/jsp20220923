@@ -3,6 +3,7 @@ package domain.chap14;
 public class Product {
 	private String name;
 	private double Price;
+	
 	public String getName() {
 		return name;
 	}
